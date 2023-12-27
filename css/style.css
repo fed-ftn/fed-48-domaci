@@ -1,0 +1,35 @@
+header {
+  background-color: rgb(64, 67, 78);
+  color: white;
+  height: 50px;
+  padding: 0%;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+header ul li {
+  padding-left: 2%;
+  display: flex;
+  width: 5%;
+  justify-content: left;
+  align-items: center;
+}
+header ul #active {
+  width: 20%;
+  background-color: rgb(255, 85, 0);
+  font-size: 18px;
+  text-decoration: underline;
+}
+header ul #active img {
+  width: 20%;
+}
+
+body {
+  margin: 0%;
+}
+
+/*# sourceMappingURL=style.css.map */

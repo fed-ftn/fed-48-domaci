@@ -1,0 +1,33 @@
+header {
+    background-color: $bgBoja;
+    color: $BojaSlova;
+    height: 50px;
+    padding: 0%;
+
+    ul {
+        display: flex;
+        list-style: none;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+
+        li {
+            padding-left: 2%;
+            display: flex;
+            width: 5%;
+            justify-content: left;
+            align-items: center;
+        }
+
+        #active {
+            width: 20%;
+            background-color: $activeBoja;
+            font-size: $activeFont;
+            text-decoration: underline;
+
+            img {
+                width: 20%;
+            }
+        }
+    }
+}
