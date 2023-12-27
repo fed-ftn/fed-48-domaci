@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section:nth-of-type(even) {
+  background-color: #f3f7f9;
+}
+
+nav {
+  display: flex;
+  background-color: #374249;
+}
+nav img {
+  width: 18pt;
+}
+nav a {
+  padding: 1em;
+  color: #fff;
+  background-color: unset;
+  border: none;
+  width: 5%;
+}
+nav a:nth-of-type(1) {
+  background: url(../slike/location.png) #f75311;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  width: 13%;
+  text-decoration: underline 1px;
+  padding-left: 5%;
+}
+
+header {
+  width: 100%;
+  background: url(../slike/intro.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+header div {
+  margin: 5%;
+  background-color: rgba(50, 50, 50, 0.6);
+  width: 70%;
+  text-align: center;
+  color: #fff;
+}
+header div h1 {
+  font-weight: 400;
+  font-size: 3em;
+}
+header div p {
+  font-size: 1em;
+}
+
+.filtersSection {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em 10%;
+  color: #797979;
+}
+.filtersSection button {
+  background-color: unset;
+  padding: 1em 2em;
+  border-radius: 100000000px;
+  margin: 1em;
+  border: 1px solid #797979;
+}
+.filtersSection button:hover {
+  background-color: #cfd1d3;
+}
+
+.resultsSection {
+  padding: 0 15%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.resultsSection > div:nth-of-type(1) {
+  background: url(../slike/1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.resultsSection > div:nth-of-type(2) {
+  background: url(../slike/2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.resultsSection > div:nth-of-type(3) {
+  background: url(../slike/3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.resultsSection > div:nth-of-type(4) {
+  background: url(../slike/4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.resultsSection > div:nth-of-type(5) {
+  background: url(../slike/5.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.resultsSection > div:nth-of-type(6) {
+  background: url(../slike/6.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.resultsSection > div {
+  width: 20%;
+  aspect-ratio: 5/6;
+  margin: 2%;
+}
+.resultsSection > div > div {
+  display: none;
+  background-color: rgba(250, 250, 250, 0.6);
+  width: 100%;
+  height: 40%;
+  padding: 8%;
+}
+.resultsSection > div:hover > div {
+  display: block;
+}
+
+h2 {
+  color: #374249;
+}
+
+.pricingSection {
+  text-align: center;
+}
+.pricingSection table {
+  width: 50%;
+  margin: auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.pricingSection table .orangeCell {
+  background-color: #f75311;
+  color: #fff;
+}
+.pricingSection table .blueCell {
+  background-color: #374249;
+  color: #fff;
+}
+.pricingSection table .emptyCell {
+  border-top: unset;
+  border-left: unset;
+}
+.pricingSection table td, .pricingSection table th {
+  padding: 1em;
+  border: 1px solid #999;
+}
+
+.contactSection {
+  text-align: center;
+}
+.contactSection div {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  justify-content: space-between;
+}
+.contactSection div form {
+  width: 60%;
+  background-color: #f75311;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.contactSection div form select {
+  width: 10%;
+}
+.contactSection div form input[type=text] {
+  width: 80%;
+}
+.contactSection div form input[type=email] {
+  width: 100%;
+}
+
+footer {
+  color: #fff;
+  background-color: #374249;
+  padding: 1em;
+  text-align: center;
+}
+footer span {
+  color: #f75311;
+}
+
+/*# sourceMappingURL=style.css.map */

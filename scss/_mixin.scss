@@ -1,0 +1,7 @@
+@mixin card($num){
+    >div:nth-of-type(#{$num}){
+        background:url(../slike/#{$num}.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+    }
+}
