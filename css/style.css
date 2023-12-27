@@ -64,6 +64,7 @@ header div p {
   color: #797979;
 }
 .filtersSection button {
+  color: #797979;
   background-color: unset;
   padding: 1em 2em;
   border-radius: 100000000px;
@@ -75,7 +76,7 @@ header div p {
 }
 
 .resultsSection {
-  padding: 0 15%;
+  padding: 2% 15%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -130,11 +131,18 @@ h2 {
 }
 
 .pricingSection {
+  padding: 3% 0 3%;
   text-align: center;
+}
+.pricingSection button {
+  display: none;
+}
+.pricingSection p {
+  margin: 3% 0;
 }
 .pricingSection table {
   width: 50%;
-  margin: auto;
+  margin: 2% auto;
   border-spacing: 0;
   border-collapse: collapse;
 }
@@ -150,36 +158,60 @@ h2 {
   border-top: unset;
   border-left: unset;
 }
-.pricingSection table td, .pricingSection table th {
-  padding: 1em;
+.pricingSection table td,
+.pricingSection table th {
+  padding: 0.5em;
   border: 1px solid #999;
 }
 
 .contactSection {
   text-align: center;
+  padding: 3% 0;
+}
+.contactSection h2 {
+  margin-bottom: 5%;
 }
 .contactSection div {
   display: flex;
-  width: 70%;
+  width: 80%;
   margin: auto;
   justify-content: space-between;
+  align-items: start;
 }
 .contactSection div form {
   width: 60%;
   background-color: #f75311;
   padding: 1em;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
 }
 .contactSection div form select {
+  padding: 0.2em;
   width: 10%;
+  border-radius: 0;
+  margin: 0.5em;
+  height: 2em;
 }
 .contactSection div form input[type=text] {
+  padding: 0.2em;
   width: 80%;
+  margin: 0.5em;
+  height: 2em;
 }
 .contactSection div form input[type=email] {
   width: 100%;
+  padding: 0.2em;
+  margin: 0.5em;
+  height: 2em;
+}
+.contactSection div form textarea {
+  padding: 0.2em;
+  width: 100%;
+  resize: none;
+  margin: 0.5em;
+  height: 10em;
 }
 
 footer {
@@ -190,6 +222,112 @@ footer {
 }
 footer span {
   color: #f75311;
+}
+
+@media screen and (max-width: 1200px) {
+  nav a:nth-of-type(1) {
+    width: 20%;
+    padding-left: 6%;
+  }
+
+  .resultsSection {
+    justify-content: space-around;
+  }
+  .resultsSection > div {
+    width: 45%;
+    aspect-ratio: 1/1;
+  }
+
+  .pricingSection table {
+    width: 70%;
+  }
+
+  .contactSection div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactSection div form {
+    margin-top: 5%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav > a {
+    text-align: center;
+    width: 50%;
+    display: none;
+  }
+  nav a:nth-of-type(1) {
+    width: 100%;
+    padding-left: 15%;
+    display: block;
+    text-align: left;
+  }
+  nav:hover a {
+    display: block;
+  }
+
+  header {
+    background: #000;
+    height: unset;
+  }
+  header > div {
+    background-color: unset;
+  }
+
+  .filtersSection {
+    padding: 5% 0;
+    justify-content: space-evenly;
+  }
+  .filtersSection > button {
+    margin: 0;
+  }
+
+  .resultsSection {
+    width: 100%;
+    padding: 0;
+  }
+  .resultsSection > div {
+    width: 95%;
+    margin: 3% 0;
+  }
+
+  .pricingSection {
+    color: #797979;
+  }
+  .pricingSection button {
+    color: #797979;
+    display: inline-block;
+    background-color: unset;
+    padding: 1em 2em;
+    border-radius: 100000000px;
+    margin: 1em 0 3em;
+    border: 1px solid #797979;
+  }
+  .pricingSection button:hover {
+    background-color: #cfd1d3;
+  }
+  .pricingSection table {
+    display: none;
+  }
+
+  .contactSection > div {
+    width: 100%;
+  }
+  .contactSection > div form {
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  .contactSection > div form select {
+    width: 100%;
+  }
+  .contactSection > div form input[type=text] {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
